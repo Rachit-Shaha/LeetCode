@@ -8,7 +8,7 @@ class Solution:
         ans = ListNode()
         temp = ans
         carry = 0
-        while (l1 != None or l2 != None) or carry:
+        while (l1 or l2) or carry:
             sum = 0
             if l1 != None:
                 sum += l1.val
